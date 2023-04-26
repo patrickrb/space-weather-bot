@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  spaceweatherbot:
+    build: .
+    command: python spaceweatherbot.py
+    volumes:
+      - ./spaceweatherbot.py:/app/spaceweatherbot.py
