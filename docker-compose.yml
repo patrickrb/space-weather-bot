@@ -1,4 +1,4 @@
-version: '3'
+version: "3"
 
 services:
   spaceweatherbot:
@@ -6,3 +6,5 @@ services:
     command: python spaceweatherbot.py
     volumes:
       - ./spaceweatherbot.py:/app/spaceweatherbot.py
+    env_file:
+      - .env
