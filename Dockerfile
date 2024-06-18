@@ -10,3 +10,6 @@ RUN apt-get update && \
 
 COPY spaceweatherbot.py .
 COPY .env .
+
+# Ensure output is sent straight to the terminal without buffering
+ENV PYTHONUNBUFFERED=1

@@ -2,3 +2,4 @@ discord
 aiohttp
 asyncio
 Pillow
+schedule
